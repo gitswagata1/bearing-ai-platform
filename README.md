@@ -48,17 +48,17 @@ npm run dev                     # http://localhost:3000
 
 | Method | Endpoint                | Description                   |
 | ------ | ----------------------- | ----------------------------- |
-| POST   | `/inspection`           | Analyse a bearing image       |
-| GET    | `/inspection/stats`     | Inspection statistics         |
-| POST   | `/quotation`            | Create a quotation            |
-| GET    | `/quotation/history`    | Quotation history             |
-| POST   | `/failure/analyze`      | Failure analysis              |
-| GET    | `/failure/patterns`     | Known failure patterns        |
-| GET    | `/maintenance/machines` | Machine health                |
-| GET    | `/maintenance/alerts`   | Maintenance alerts            |
-| GET    | `/sourcing/forecast`    | Demand forecast               |
-| GET    | `/sourcing/suppliers`   | Supplier scores               |
-| GET    | `/sourcing/recommendation` | Sourcing recommendation    |
+| POST   | `/api/inspect`           | Analyse a bearing image       |
+| GET    | `/api/inspect/stats`     | Inspection statistics         |
+| POST   | `/api/quote`            | Create a quotation            |
+| GET    | `/api/quote/history`    | Quotation history             |
+| POST   | `/api/failure/analyze`      | Failure analysis              |
+| GET    | `/api/failure/patterns`     | Known failure patterns        |
+| GET    | `/api/maintenance/machines` | Machine health                |
+| GET    | `/api/maintenance/alerts`   | Maintenance alerts            |
+| GET    | `/api/sourcing/forecast`    | Demand forecast               |
+| GET    | `/api/sourcing/suppliers`   | Supplier scores               |
+| GET    | `/api/sourcing/recommendation` | Sourcing recommendation    |
 
 ## Project structure
 
