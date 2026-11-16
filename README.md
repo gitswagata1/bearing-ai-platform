@@ -9,6 +9,7 @@ quotation, failure analysis, predictive maintenance and sourcing intelligence.
 ![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-16-000000?logo=nextdotjs&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)
+[![CI](https://github.com/gitswagata1/bearing-ai-platform/actions/workflows/ci.yml/badge.svg)](https://github.com/gitswagata1/bearing-ai-platform/actions/workflows/ci.yml)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 </div>
@@ -26,6 +27,9 @@ quotation, failure analysis, predictive maintenance and sourcing intelligence.
 - [Project structure](#project-structure)
 - [Demo mode](#demo-mode)
 - [Extending the platform](#extending-the-platform)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [Citation](#citation)
 - [License](#license)
 
 ## Modules
@@ -66,6 +70,14 @@ uvicorn main:app --reload --port 8000
 ```
 
 Interactive API docs: <http://localhost:8000/docs>
+
+### Run the tests
+
+```bash
+cd backend
+pip install -r requirements-dev.txt
+python -m pytest -q
+```
 
 ### 2. Frontend
 
@@ -112,7 +124,9 @@ bearing-ai-platform/
 │   │   ├── failure.py           /api/failure
 │   │   ├── maintenance.py       /api/maintenance
 │   │   └── sourcing.py          /api/sourcing
+│   ├── tests/               API smoke tests (pytest)
 │   ├── requirements.txt
+│   ├── requirements-dev.txt
 │   └── .env.example
 ├── frontend/
 │   ├── src/
@@ -140,6 +154,23 @@ shows a **Demo Mode** banner, so the dashboard can be explored with only
    external API. Keep the Pydantic response model so the frontend does not change.
 3. Add tests and, if needed, new fields to the response model and the matching
    TypeScript types.
+
+## Roadmap
+
+Planned work, ideas for taking the project further and open research questions are in
+[ROADMAP.md](ROADMAP.md). Good first tasks are labelled
+[`good first issue`](https://github.com/gitswagata1/bearing-ai-platform/labels/good%20first%20issue).
+
+## Contributing
+
+Contributions are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) and the
+[Code of Conduct](CODE_OF_CONDUCT.md) first. To report a vulnerability, follow
+[SECURITY.md](SECURITY.md).
+
+## Citation
+
+If you use this project in research or a product, you can cite it using
+[CITATION.cff](CITATION.cff) (GitHub shows a "Cite this repository" button).
 
 ## License
 
