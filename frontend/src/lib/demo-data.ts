@@ -15,7 +15,7 @@ export type InspectionResult = {
 export const demoInspectionResult: InspectionResult = {
   id: "INS-2026-04872",
   part_number: "6200-2RS",
-  batch: "MT-2026-09-B47",
+  batch: "BR-2026-09-B47",
   result: "DEFECT",
   confidence: 94.2,
   defect_type: "Surface Pitting",
@@ -29,7 +29,7 @@ export const demoInspectionResult: InspectionResult = {
 export const demoInspectionPass: InspectionResult = {
   id: "INS-2026-04873",
   part_number: "6200-2RS",
-  batch: "MT-2026-09-B47",
+  batch: "BR-2026-09-B47",
   result: "PASS",
   confidence: 97.8,
   defect_type: null,
@@ -91,7 +91,7 @@ export const demoFailureResult = {
     "Check motor assembly alignment at customer end",
     "Verify lubrication type, quantity, and re-greasing interval",
     "Inspect seal condition on remaining stock from same batch",
-    "Cross-reference with batch MT-2026-06-B31 (previous failure, same customer)",
+    "Cross-reference with batch BR-2026-06-B31 (previous failure, same customer)",
     "If batch-related: initiate production hold on remaining inventory",
   ],
   warranty_eligible: true,

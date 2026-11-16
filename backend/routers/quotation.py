@@ -210,7 +210,7 @@ async def generate_quote(req: QuoteRequest):
         ai_notes=notes,
         upsell_suggestion=upsell,
         generated_at=datetime.now(timezone.utc).isoformat(),
-        ai_version="MT-Quote-v1.1.0",
+        ai_version="BR-Quote-v1.1.0",
     )
 
 

@@ -16,11 +16,11 @@ const quickActions = [
 ];
 
 const recentActivity = [
-  { time: "2 min ago", text: "Bearing #MT-04872 flagged — surface pitting detected (94.2%)", type: "red" },
+  { time: "2 min ago", text: "Bearing #BR-04872 flagged — surface pitting detected (94.2%)", type: "red" },
   { time: "12 min ago", text: "Quote QT-0892 generated for ABC Bearings — ₹2,50,750", type: "blue" },
   { time: "28 min ago", text: "Grinding #3 alert — spindle failure predicted in 72h", type: "yellow" },
   { time: "1 hr ago", text: "Failure analysis FA-0147 — fatigue spalling, XYZ Motors", type: "red" },
-  { time: "2 hr ago", text: "Batch MT-B47: 236 inspected, 228 passed, 8 defects", type: "green" },
+  { time: "2 hr ago", text: "Batch BR-B47: 236 inspected, 228 passed, 8 defects", type: "green" },
   { time: "3 hr ago", text: "Supplier A scored 92% — recommended for Q4 procurement", type: "green" },
 ];
 

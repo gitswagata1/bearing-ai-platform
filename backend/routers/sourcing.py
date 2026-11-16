@@ -220,5 +220,5 @@ async def procurement_recommendation():
             "Taper Roller 30205 — single-source dependency on SUP-001. Qualify SUP-004 as backup.",
         ],
         estimated_savings="₹1.8–2.5L if GCr15 procured at current spot prices vs projected Nov rates",
-        ai_version="MT-Sourcing-v1.0.0",
+        ai_version="BR-Sourcing-v1.0.0",
     )

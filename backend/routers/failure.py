@@ -245,7 +245,7 @@ async def analyze_failure(req: FailureRequest):
     ]
     cause = random.choice(causes_list)
     hours = req.operating_hours
-    batch = f"MT-2026-{random.randint(1,9):02d}-B{random.randint(20,55)}"
+    batch = f"BR-2026-{random.randint(1,9):02d}-B{random.randint(20,55)}"
     replace_at = int(hours * 0.8)
 
     summary = db["root_cause_template"].format(
@@ -271,7 +271,7 @@ async def analyze_failure(req: FailureRequest):
         related_cases=related_cases,
         ai_root_cause_summary=summary,
         analyzed_at=datetime.now(timezone.utc).isoformat(),
-        ai_version="MT-Failure-v1.0.0",
+        ai_version="BR-Failure-v1.0.0",
     )
 
 

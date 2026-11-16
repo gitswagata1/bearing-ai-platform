@@ -74,8 +74,8 @@ async def inspect_bearing(
 
     scan_time = random.randint(600, 1200)
     is_defect = random.random() < 0.15
-    bearing_id = f"MT-{part_number}-{uuid.uuid4().hex[:5].upper()}"
-    batch_id = f"MT-2026-09-B{random.randint(40, 60)}"
+    bearing_id = f"BR-{part_number}-{uuid.uuid4().hex[:5].upper()}"
+    batch_id = f"BR-2026-09-B{random.randint(40, 60)}"
     now = datetime.now(timezone.utc).isoformat()
 
     if is_defect:
@@ -104,7 +104,7 @@ async def inspect_bearing(
             confidence_pct=confidence,
             defect=defect,
             recommendation=RECOMMENDATIONS[severity],
-            inspector_ai_version="MT-Vision-v1.2.0",
+            inspector_ai_version="BR-Vision-v1.2.0",
             timestamp=now,
         )
 
@@ -118,7 +118,7 @@ async def inspect_bearing(
         confidence_pct=confidence,
         defect=None,
         recommendation="Ship — meets quality standards",
-        inspector_ai_version="MT-Vision-v1.2.0",
+        inspector_ai_version="BR-Vision-v1.2.0",
         timestamp=now,
     )
 
